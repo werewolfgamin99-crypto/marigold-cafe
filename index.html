@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marigold Café &amp; Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="wordmark">Marigold</a>
+    <nav class="main-nav">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Coffee, warm bread,<br>and a place to slow down.</h1>
+        <p class="hero-sub">A small neighborhood café serving slow-brewed coffee and fresh-baked pastries since 2019.</p>
+        <a href="#visit" class="btn btn-primary">Find us</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="cup-illustration">
+          <ellipse cx="210" cy="360" rx="150" ry="18" fill="#3E2723" opacity="0.08"/>
+          <path d="M110 150 h190 l-14 150 a40 40 0 0 1-40 36 H164 a40 40 0 0 1-40-36 Z" fill="#FBF3E4" stroke="#3E2723" stroke-width="5"/>
+          <path d="M300 175 q55 -5 55 45 q0 55 -60 55" fill="none" stroke="#3E2723" stroke-width="5"/>
+          <path d="M128 150 q10 -35 -6 -55 q-14 -18 2 -40" fill="none" stroke="#E8A33D" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+          <path d="M172 150 q10 -30 -4 -48 q-13 -16 2 -34" fill="none" stroke="#E8A33D" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+          <path d="M216 150 q10 -35 -6 -55 q-14 -18 2 -40" fill="none" stroke="#E8A33D" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+          <rect x="90" y="150" width="230" height="18" rx="4" fill="#3E2723"/>
+          <circle cx="330" cy="90" r="26" fill="#8A9A5B" opacity="0.85"/>
+          <circle cx="360" cy="60" r="10" fill="#E8A33D"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="story">
+    <div class="wrap story-inner">
+      <h2>Our story</h2>
+      <p>Marigold started as a single table and a home espresso machine. Six years later, we're still doing the same thing we did on day one &mdash; roasting in small batches, baking before sunrise, and keeping a table open for whoever walks in. Everything on our counter is made the same morning it's served.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="wrap">
+      <h2>What's on the counter</h2>
+      <div class="menu-grid">
+
+        <div class="menu-group">
+          <h3>Coffee</h3>
+          <ul>
+            <li><span>House drip</span><span class="price">$3.50</span></li>
+            <li><span>Cortado</span><span class="price">$4.25</span></li>
+            <li><span>Oat milk latte</span><span class="price">$5.00</span></li>
+            <li><span>Pour over, single origin</span><span class="price">$5.50</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h3>Pastries</h3>
+          <ul>
+            <li><span>Morning bun</span><span class="price">$4.50</span></li>
+            <li><span>Sourdough cardamom roll</span><span class="price">$5.00</span></li>
+            <li><span>Olive oil cake, slice</span><span class="price">$4.75</span></li>
+            <li><span>Seeded rye loaf</span><span class="price">$9.00</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-group">
+          <h3>Light bites</h3>
+          <ul>
+            <li><span>Egg &amp; herb tartine</span><span class="price">$8.50</span></li>
+            <li><span>Soup of the day</span><span class="price">$7.00</span></li>
+            <li><span>Seasonal salad, small</span><span class="price">$7.50</span></li>
+            <li><span>Cheese &amp; fruit board</span><span class="price">$12.00</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap visit-inner">
+
+      <div class="visit-info">
+        <h2>Come say hello</h2>
+        <dl>
+          <dt>Address</dt>
+          <dd>214 Elm Street, Riverbend</dd>
+          <dt>Hours</dt>
+          <dd>Tue&ndash;Sun, 7am&ndash;3pm<br>Closed Mondays</dd>
+          <dt>Phone</dt>
+          <dd>(555) 019-2288</dd>
+        </dl>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h3>Send us a message</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>&copy; 2026 Marigold Café &amp; Bakery</span>
+    <span>Made with care in Riverbend</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
